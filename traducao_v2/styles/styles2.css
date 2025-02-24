@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100vw;
+    min-height: 100vh;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.container{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#supergraphic{
+    width: 100%;
+}
+
+.containerLogo{
+    display: flex;
+    align-items: center;
+    width: 118.8px;
+    height: 50px;
+}
+
+.logo{
+    width: 100%;
+}
+
+i.bi.bi-house.icon{
+    font-size: 20px;
+    color: #000000;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+.saudacao{
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    grid-template-rows: 35% auto;
+}
+
+#orbi{
+    grid-column: 1;
+    grid-row: 2;
+    width: 125px;
+    height: 115px;
+}
+
+.balao-fala{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+ 
+.fala {
+    width: 228.2px;
+    height: 177px;
+    background: #007BC0;
+    float: left;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+ 
+.fala:before {
+    content: '';
+    border-color: transparent transparent #007BC0 transparent;
+    border-width: 10px;
+    border-style: solid;
+    margin-left: -20px;
+    margin-top: 30px;
+    transform:rotate(55deg);
+    -ms-transform:rotate(55deg);
+    -webkit-transform:rotate(55deg);
+}
+
+.text-saudacao{
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.botoes-navegacao{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn-dta{
+    width: 216px;
+    height: 54px;
+    color: #ffffff;
+    background-color: #9E2896;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-tour{
+    width: 216px;
+    height: 54px;
+    color: #ffffff;
+    background-color: #00884A;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-equipe{
+    width: 216px;
+    height: 54px;
+    color: #ffffff;
+    background-color: #007BC0;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-dta:hover,
+.btn-tour:hover,
+.btn-equipe:hover{
+    cursor: pointer;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    main {
+        gap: 80px
+    }
+
+    #supergraphic {
+        width: 100%;
+    }
+}
+
+/* Ajuste para celulares menores */
+@media (max-width: 480px) {
+    main {
+        gap: 60px;
+        width: 100%;
+    }
+
+    #supergraphic {
+        width: 100%;
+    }
+}

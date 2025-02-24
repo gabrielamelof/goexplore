@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style_qrcode.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Leitor de QR Code</title>
+  <!-- CDN da biblioteca html5-qrcode -->
+  <script src="./html5-qrcode.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <section class="container">
+        <div class="containerLogo">
+            <a href="">
+                <img src="images/logo.svg" alt="" class="logo"> 
+            </a>
+            
+        </div>
+
+        <a href="">
+            <i class="bi bi-house icon"></i>
+        </a>
+    </section>
+        
+        <img id="supergraphic" src="images/supergraphic.svg" alt="">
+</header>
+
+<main>
+  <div class="container-content">
+    <div class="reader-container">
+      <h2>Escaneie o QR Code das salas</h2>
+      <div id="qr-reader"></div>
+      <div id="resultado">Escaneie um QR Code!</div>
+    </div>
+
+   
+
+  </div>
+
+  <div class="tour-virtual">
+    <p class="text-predio">Não está no prédio?</p>
+    <button class="fazer-tour">Fazer Tour Virtual</button>
+  </div>
+</main>
+<script src="script.js" async></script>
+</body>
+</html>

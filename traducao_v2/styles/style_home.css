@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100vw;
+    min-height: 100vh;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.container{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#supergraphic{
+    width: 100%;
+}
+
+.containerLogo{
+    display: flex;
+    width: 118.8px;
+    height: 50px;
+}
+
+.logo{
+    width: 100%;
+}
+
+i.bi.bi-house.icon{
+    font-size: 20px;
+    color: #000000;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.saudacao{
+    display: flex;
+    justify-content: center;
+}
+
+#orbi{
+    width: 121.72px;
+    height: 113.38px;
+}
+
+.box-comentario {
+    width: 500px;
+    height: 200px;
+}
+ 
+.comentario {
+    width: 228.2px;
+    height: 177px;
+    background: #007BC0;
+    float: left;
+    border-radius: 15px;
+}
+ 
+.comentario:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-color: transparent transparent #007BC0 transparent;
+    border-width: 8px;
+    border-style: solid;
+    margin-left: -8px;
+    margin-top: 25px;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); /* IE 9 */
+    -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+}
+ 
+
